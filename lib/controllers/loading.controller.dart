@@ -9,7 +9,7 @@ import 'package:rickandmorty/views/home.view.dart';
 
 class LoadingController {
   Future createPerson(context) async {
-  final jsonListViewModel = Provider.of<JsonListViewModel>(context);
+    final jsonListViewModel = Provider.of<JsonListViewModel>(context);
 
     var _listCaracteres = await PersonRepository().getPerson();
 

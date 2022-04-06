@@ -8,9 +8,9 @@ class PersonRepository {
   final Connectivity _connectivity = Connectivity();
 
   Future getPerson() async {
-    var _result = await (_connectivity.checkConnectivity());
-    print("_result: $_result");
-    if(_result == ConnectivityResult.none) return null;
+    //var _result = await (_connectivity.checkConnectivity());
+    //print("_result: $_result");
+    //if(_result == ConnectivityResult.none) return null;
 
     try{
       var _jsonRes = await http.get(Uri.parse("https://rickandmortyapi.com/api/character?page=1"));
